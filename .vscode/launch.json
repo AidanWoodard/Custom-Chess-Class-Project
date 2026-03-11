@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch core.Main",
+      "request": "launch",
+      "mainClass": "core.Main",
+    },
+    {
+      "type": "java",
+      "name": "Launch examples.HelloWorld",
+      "request": "launch",
+      "mainClass": "examples.HelloWorld",
+    },
+    {
+      "type": "java",
+      "name": "Launch activities.compileerrors.Main",
+      "request": "launch",
+      "mainClass": "activities.compileerrors.Main",
+    },
+    {
+      "type": "java",
+      "name": "Launch examples.MurderMystery.com.mystery.MurderMystery",
+      "request": "launch",
+      "mainClass": "examples.MurderMystery.com.mystery.MurderMystery",
+    },
+    {
+      "type": "java",
+      "name": "Run with Maven: exec:java (examples.HelloWorld)",
+      "request": "launch",
+      "mainClass": "examples.HelloWorld",
+      "args": "",
+      "env": {}
+    }
+  ]
+}
