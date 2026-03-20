@@ -30,7 +30,7 @@ public class Console implements View {
      * 
      * @param board The board to print
      */
-    private void print(Board board) {
+    protected void print(Board board) {
         for (int rank = 7; rank >= 0; rank--) {
             for (int file = 0; file < 8; file++) {
                 Piece piece = board.getSquare(rank, file).getPiece();
@@ -95,7 +95,7 @@ public class Console implements View {
      * 
      * @param moves The list of moves to display
      */
-    private void print(ArrayList<Move> moves) {
+    protected void print(ArrayList<Move> moves) {
         for(int i = 0; i < moves.size(); i++) {
             print((i+1) + ": " + moves.get(i));
         }
@@ -109,7 +109,7 @@ public class Console implements View {
      * @param board The current board state
      * @return A list of all legal moves available to the player
      */
-    private ArrayList<Move> getMoves(Player player, Board board) {
+    protected ArrayList<Move> getMoves(Player player, Board board) {
         var moves = new ArrayList<Move>();
         var pieces = board.getPieces(player.getColor());
         for(var piece : pieces) {

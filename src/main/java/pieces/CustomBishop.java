@@ -3,7 +3,6 @@ package pieces;
 import java.util.ArrayList;
 
 import movesets.DiagonalMoveset;
-import movesets.HorizontalMoveset;
 import movesets.HorizontalMovesetNoCapture;
 import state.Board;
 import state.Square;

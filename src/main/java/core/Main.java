@@ -2,9 +2,10 @@ package core;
 
 import game.HumanPlayer;
 import game.Match;
-import state.ConventionalBoardFactory;
+// import state.ConventionalBoardFactory;
+// import ui.Console;
 import state.CustomPieceBoardFactory;
-import ui.Console;
+import ui.CustomPieceConsole;
 import util.Color;
 
 /**
@@ -24,7 +25,7 @@ public class Main {
         var board = CustomPieceBoardFactory.createCustom();
         var player1 = new HumanPlayer(Color.WHITE, board);
         var player2 = new HumanPlayer(Color.BLACK, board);
-        var console = new Console();
+        var console = new CustomPieceConsole();
         var match = new Match(player1, player2, board, new rules.Rulebook(), console);
         match.start();
     }
