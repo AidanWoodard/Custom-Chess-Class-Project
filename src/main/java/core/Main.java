@@ -1,7 +1,5 @@
 package core;
 
-import java.beans.Customizer;
-
 import game.HumanPlayer;
 import game.Match;
 import state.ConventionalBoardFactory;
