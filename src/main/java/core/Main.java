@@ -1,8 +1,11 @@
 package core;
 
+import java.beans.Customizer;
+
 import game.HumanPlayer;
 import game.Match;
 import state.ConventionalBoardFactory;
+import state.CustomPieceBoardFactory;
 import ui.Console;
 import util.Color;
 
@@ -19,7 +22,8 @@ public class Main {
      * @param args Command line arguments (not used)
      */
     public static void main(String[] args) {
-        var board = ConventionalBoardFactory.create();
+        // var board = ConventionalBoardFactory.create();
+        var board = CustomPieceBoardFactory.createCustom();
         var player1 = new HumanPlayer(Color.WHITE, board);
         var player2 = new HumanPlayer(Color.BLACK, board);
         var console = new Console();
