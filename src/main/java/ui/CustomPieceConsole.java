@@ -1,21 +1,22 @@
 package ui;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 import game.Player;
 import pieces.CustomBishop;
 import pieces.Piece;
 import rules.Move;
 import state.Board;
-import util.Color;
 
 public class CustomPieceConsole extends Console {
-    // make sure to keep this reference
+    /**
+     * 'bishops' is an array of the current color bishops. We hold this reference for the custom motion.
+     * partner is whichever bishop is being moved passively, as in the player is not directly moving it.
+     */
     private ArrayList<Piece> bishops;
     private Piece partner;
 
-        /**
+    /**
      * The custom console helps handle the dual-piece motion of the custom bishop piece.
      * When one bishop is moved left one space (and is able), the other should. No capture
      * is allowed (full rules in CustomBishop.java constructor).

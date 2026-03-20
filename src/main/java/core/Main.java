@@ -18,6 +18,10 @@ public class Main {
      * Creates a standard 8x8 chess board, initializes two human players,
      * and starts a match between them.
      * 
+     * CUSTOM PIECE: we create an object using CustomPieceBoardFactory rather than the conventional 
+     * board. Also, we use createCustom instead of create so that both create and createCustom can
+     * be static. The only difference is that createCustom places our custom bishop pieces.
+     * 
      * @param args Command line arguments (not used)
      */
     public static void main(String[] args) {
