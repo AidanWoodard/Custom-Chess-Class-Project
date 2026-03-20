@@ -34,7 +34,7 @@ public class ConventionalBoardFactory {
      * @param rank The rank on which to place the pawns
      * @param board The board to add pawns to
      */
-    private static void addPawns(Color color, int rank, Board board) {
+    protected static void addPawns(Color color, int rank, Board board) {
         for (int file = 0; file < 8; file++) {
             board.getSquare(rank,file).setPiece(new pieces.Pawn(color));
         }
