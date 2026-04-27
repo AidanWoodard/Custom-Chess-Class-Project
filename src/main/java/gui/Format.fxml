@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<!-- Root container for the GUI -->
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GuiController">
+    <center>
+        <!-- Component grid to hold the chessboard -->
+        <!-- An fx:id is assigned to allow Java code to populate the grid and provide the potential to add piece interaction in the future -->
+        <GridPane fx:id="chessBoardGrid" alignment="CENTER" />
+    </center>
+</BorderPane>
